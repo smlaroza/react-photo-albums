@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Rubik+Mono+One&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.albumCover {
+  padding: 1px;
+  padding-bottom: 0px;
+}
+
+.allAlbums,
+.eachPhoto {
+  display: flex;
+  margin: auto;
+  width: 730px;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-family: "Rubik Mono One", sans-serif;
+  text-align: center;
+  border: 6px solid black;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 500px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.albumName {
+  padding: 12px;
+  font-weight: bold;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.pictureName {
+  padding: 12px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  font-family: "Rubik Mono One", sans-serif;
+  padding: 30px;
+  font-size: 10px;
+}
+
+.footertwo {
+  font-family: "Rubik Mono One", sans-serif;
+  padding: 30px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.frontcvr {
+  padding: 1px;
+}
+
+.actualimg {
+  border: 6px solid black;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+.singlePhoto {
+  padding: 1px;
+}
+
+.allAlbumsImg {
+  border: 6px solid black;
+}
