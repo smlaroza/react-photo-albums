@@ -36,7 +36,6 @@ function Coveralbums(props) {
           </Link>
         ))}
       </div>
-      <footer className="footer">&copy; Shey Laroza // Nov. 2019</footer>
     </div>
   )
 }

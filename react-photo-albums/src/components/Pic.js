@@ -15,35 +15,14 @@ function Pic(props) {
     })
   }, [albumId])
 
-  useEffect(
-    (e) => {
-      axios.get("/albums").then((resp) => {
-        setAlbums(resp.data)
-      })
-    },
-    [albumName]
-  )
 
   return (
     <div className="individualAlbum">
       <h1>{albumName}</h1>
-
-      <div className="navBar">
-        <div className="home">
-          <Link to="">All Albums</Link>
-        </div>
-        {albums.map((e) => (
-          <p>
-            <Link key={"albums" + albums.name} to={"/Pic/" + e.id}>
-              <div className="albumName">{e.name}</div>
-            </Link>
-          </p>
-        ))}
-      </div>
       <div className="eachPhoto">
         {Pic.map((e) => (
           <div>
-            <Link key={e.id} to={"/Pic/" + e.id}>
+            <Link key={e.id} to={"/single/" + e.id}>
               <div className="picContainer">
                 <div className="singlePhoto">
                   <img
@@ -59,7 +38,6 @@ function Pic(props) {
           </div>
         ))}
       </div>
-      <footer className="footertwo">&copy; Shey Laroza // Nov. 2019</footer>
     </div>
   )
 }
